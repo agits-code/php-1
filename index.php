@@ -1,27 +1,5 @@
-<!Doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <style>
-        header {
-            background-color: lightgray;
-            padding: 2em;
-            text-align: center;
-        }
-    </style>
+<?php
 
-</head>
+ $greeting ='Hello, World';
 
-<body>
-
-<header>
-    <h1>
-
-        <?= 'Hello, ' . htmlspecialchars($_GET['name']); ?>
-    </h1>
-
-</header>
-
-</body>
-</html>
+ require 'index.view.php';
