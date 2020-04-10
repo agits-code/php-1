@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,13 +15,17 @@
 
 <body>
 
-<header>
-    <h1>
 
-        <?= $greeting; ?>
-    </h1>
 
-</header>
+  <ul>
+<!--questa versione è più elegante -->
+      <?php foreach ($names as $name) : ?>
+           <li><?= $name ?></li>
+      <?php  endforeach; ?>
+
+
+
+  </ul>
 
 </body>
 </html>
