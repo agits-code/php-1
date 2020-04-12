@@ -1,8 +1,8 @@
 <?php
 
-echo "<script>
+   echo "<h1><script>
     document.write('today is ' + Date()); 
-</script>";    //stampa data corretta
+</script></h1>";    //stampa data corretta
 echo "<br/>";
 
 $nomi = [
@@ -33,6 +33,7 @@ $tris = array(
 );
 $tris[0][0] = 'o';
 print_r($tris);
+
 echo "this is line" . __LINE__ . "of file" . __FILE__;
 // stampare testo lungo su più righe con HEREDOC - struttura in output dipende da tag html
 $name1 = 'Simone';
@@ -44,7 +45,7 @@ $html = <<<HTML
                                             <li>elemento 3</li>
 </ul>
 HTML;
-echo $html;
+echo "<h1>$html</h1>";
 //stampare testo lungo con NOWDOC ---- apostrofi e non eseguito parsing del variabile
 $html = <<<'HTML'
 <ul>
