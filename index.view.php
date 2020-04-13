@@ -11,11 +11,12 @@
         }
         ul {
             background-color: hotpink;
-            text-align: center;
+
             font-size: large;
 
-
-
+        }
+        h2 {
+            background-color: aqua;
         }
     </style>
 
@@ -30,6 +31,40 @@
            <li><?= $nome ?></li>
       <?php  endforeach; ?>
   </ul>
+
+ <ul>
+     <?php
+           foreach ($nomi as $nome)
+           {
+           echo "<li> $nome </li>";
+     }
+    ?>
+ </ul>
+
+ <ul>
+     <?php foreach ($tudo as $key => $value) : ?>
+          <li><strong><?= $key ;?></strong>  <?= $value;?></li>
+     <?php endforeach;?>
+
+
+
+ </ul>
+
+ <h1><script>
+         document.write('today is ' + Date());
+     </script>
+ </h1>
+
+ <h2><?= date('l j F Y  h : i: s  A');?>/h2>
+     <h3><?= "this is line" . __LINE__ . "of file" . __FILE__; ?></h3>
+     <h1>
+         <pre>
+        Hello World
+eccoci ci siamo
+                    proprio
+              oggi!!!!
+                    </pre>
+     </h1>
 
 </body>
 </html>
