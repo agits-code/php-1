@@ -1,21 +1,10 @@
 <?php
 
 
-$nomi = [
-     'aghy',
-     'ieva',
-     'omis'
- ];
+$query = require 'core/bootstrap.php';
 
+$router = new Router;
+require 'routes.php';
 
-
-$tudo = [
-	'cosa'=> 'fare spesa',
-    'quando'=> 'domani',
-    'chi'=> 'io'
-];
-echo '<pre>';
-var_dump($tudo);
-echo '</pre>';
-
-require 'index.view.php';
+$uri = trim($_SERVER['REQUEST_URI'],'/');
+require $router->direct('');
