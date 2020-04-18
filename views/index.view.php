@@ -27,17 +27,20 @@
 	<ul>
 		<li><a href="/php-1/views/about.view.php">About Page</a> </li>
 		<li><a href="/php-1/views/contact.view.php">Contact Page</a> </li>
-		<li><a href="/php-1/views/about-culture.view.php">About Page</a> </li>
+		<li><a href="/php-1/views/about-culture.view.php">About Culture</a> </li>
 
 	</ul>
 </nav>
+
+
  <?php if (isset($_GET['user'])) : ?>
  <h1> <?= 'Hello World, ' . htmlspecialchars($_GET['user']);?></h1>
 <?php else: ?>
 	<h1> <?= 'Hello World, ' . 'Anonimo';?></h1>
 <?php endif ?>
 
- <h3>lettura database</h3>
+
+ <h3>My Tasks</h3>
 <ul>
 	 <?php foreach ($tasks as $task) : ?>
 	 <li>

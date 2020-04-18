@@ -5,4 +5,22 @@ $router->define([
     'contact' => 'controllers/contact.php',
     'about/culture' => 'controllers/about-culture.php'
 
+
 ]);
+
+/*
+ * /index.php
+ * /about.php
+ * /contact.php
+ * /about-culture.php
+ * /gallerie/index.php
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */

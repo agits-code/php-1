@@ -1,0 +1,146 @@
+MacBook-di-Agita:~ agitafridrihsone$ mysql -u root -ppuks1962
+sudo apachectl restart
+
+    /*
+     * dominio - sistema di dns che ricava l'ip el server (DNS)
+     * ip - ti connetti al server, allora porta 80
+     * server - guarda che cazzo di servizio è attivo sulla porta 80 (APACHE)
+     * apache - gli gira la richiesta
+     * apache - guarda il dominio e trova la directory corrispondete (virtualhost)
+     * apache - carica il file htaccess
+     * apache - esegue le regole del mod rewrite (URL REWRITING)
+     * apache - vede che l'estensione del file .php e va a vedere a quale modulo l'estensione è assegnata
+     * php - riceve la richiesta da apache
+     * php - esegue la richiesta, va a vedere qual'è il dominio e la url (ROUTINGSYSTEM)
+     * php - restituisce l'output ad apache
+     * - e tutta la catena va al contrario.
+     *
+     *
+     *
+     * $connection = mysqli_connect($server, $username, $database);
+     *
+     * $query = mysqli_query($connection, "SELECT * FROM tuatabella");
+     *
+     * $record = mysqli_fetch_array($query); // 1 linea e sposta il cursore
+     * $record = mysqli_fetch_array($query); // 2a linea e sposta internamente il cursore
+     *
+     * while ($linea = mysqli_fetch_array($query) !== false) {
+     *  echo $linea['colonna'];
+     * }
+     *
+     * ------------------------
+     *
+     * function db_connessione($server, $username, $database) {
+     *
+     * global $connection;
+     *
+     *  $connection = mysqli_connect($server, $username, $database);
+     * }
+     *
+     * function db_query_all ($query) {
+     *
+     * global $connection;
+     *
+     *  $query = mysqli_query($connection, $query);
+     *  $risultati = [];
+     *
+     * while ($linea = mysqli_fetch_array($query) !== false) {
+     *
+     * $risultati[] = $linea;
+     *
+     * return $risultati;
+     * }
+     *
+     * }
+     *
+     * -------
+     *
+     * db_connessione($server, $username, $database);
+     *
+     * $linee = db_query_all("SELECT * FROM tabella");
+     *
+     * $connection = 'qualsiasicosa';
+
+     * $linee2 = db_query_all("SELECT * FROM tabella2");
+     *
+     * --------
+     *
+     * class Sqlserver {
+     *
+     * private $connection;
+     *
+     * function connessione($server, $username, $database) {
+     *
+     *  $this->connection = mysqli_connect($server, $username, $database);
+     * }
+     *
+     * function query_all ($query) {
+     *
+     *
+     *  $query = mysqli_query($this->connection, $query);
+     *  $risultati = [];
+     *
+     * while ($linea = mysqli_fetch_array($query) !== false) {
+     *
+     * $risultati[] = $linea;
+     *
+     * return $risultati;
+     * }
+     *
+     * }
+     * }
+     *
+     * -----------
+     *
+     * $db = new Sqlserver;
+     * $db->connessione($server, $username, $database);
+     *
+     * $linee = $db->query_all("SELECT * FROM tabella");
+     *
+     * $connection = 'qualsiasicosa';
+
+     * $linee2 = $db->query_all("SELECT * FROM tabella2");
+     *
+     *
+     * -----------
+     *
+     * class TuaClasse1
+     *
+     * Private $db;
+     *
+     * function __construct($db) {
+     *
+     * $this->db = $db;
+     * }
+     *
+     *
+     * function leggi () {
+     *
+     *
+     * return $this->db->query_all("SELECT * FROM libri");
+     *
+     * }
+     *
+     *
+     * }
+
+     * -----------
+     *
+     *
+     * $miaClasse = new TuaClasse1($dbconnection);
+     *
+     * $libri = $miaClasse->leggi();
+     *
+     *
+     *
+     * ------------
+     *
+     * SELECT nome, cognome, datanascita
+     * FROM anagrafe
+     * WHERE datanascita = '6/7/84'
+     * ORDER BY datanascia ASC
+     * LIMIT 10
+     *
+     *
+     *
+     */

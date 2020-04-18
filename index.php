@@ -7,4 +7,18 @@ $router = new Router;
 require 'routes.php';
 
 $uri = trim($_SERVER['REQUEST_URI'],'/');
-require $router->direct('');
+
+try {
+    require $router->direct($uri);
+} catch (\Exception $e) {
+
+    echo $e->getMessage();
+}
+
+
+
+//echo '<pre>';
+//var_dump($_SERVER);
+//echo '</pre>';
+var_dump($_SERVER["REQUEST_URI"]);
+
