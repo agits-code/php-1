@@ -17,8 +17,6 @@ try {
 
 
 
-//echo '<pre>';
-//var_dump($_SERVER);
-//echo '</pre>';
+
 var_dump($_SERVER["REQUEST_URI"]);
 

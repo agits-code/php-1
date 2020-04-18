@@ -1,12 +1,4 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>about us</title>
-
-</head>
-<body>
+<?php require ('partials/head.php');?>
 <h1>About Us</h1>
 
-</body>
-
-</html>
+<?php require ('partials/footer.php');?>

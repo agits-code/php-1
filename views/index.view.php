@@ -1,36 +1,6 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <style>
-        h1 {
-            background-color: lightgray;
-            padding: 2em;
-            text-align: center;
-        }
-        ul {
-            background-color: hotpink;
 
-            font-size: large;
+   <?php require ('partials/head.php');?>
 
-        }
-        h2 {
-            background-color: aqua;
-        }
-    </style>
-
-</head>
-
-<body>
-
-<nav>
-	<ul>
-		<li><a href="/php-1/views/about.view.php">About Page</a> </li>
-		<li><a href="/php-1/views/contact.view.php">Contact Page</a> </li>
-		<li><a href="/php-1/views/about-culture.view.php">About Culture</a> </li>
-
-	</ul>
-</nav>
 
 
  <?php if (isset($_GET['user'])) : ?>
@@ -54,6 +24,4 @@
 	 <?php endforeach;?>
  </ul>
 
-
-</body>
-</html>
+<?php require ('partials/footer.php');?>
