@@ -1,6 +1,7 @@
 <?php
 class Router {
     protected $routes = [];
+    // passo valori chiamando  define(['a','b',...'z'])
     public function define($routes) {
       $this->routes = $routes;
     }
