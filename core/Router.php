@@ -3,9 +3,9 @@ class Router {
     protected $routes = [];
     // passo valori chiamando  define(['a','b',...'z'])
 
-    public static function load() {   //dovrebbe passare $file
+    public static function load($file) {   //dovrebbe passare $file
         $router = new static;
-        require 'routes.php';      //dovrebbe require $file
+        require $file;      //dovrebbe require $file
         return $router;
     }
 

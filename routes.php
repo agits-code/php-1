@@ -8,20 +8,3 @@ $router->define([
 
 
 ]);
-
-/*
- * /index.php
- * /about.php
- * /contact.php
- * /about-culture.php
- * /gallerie/index.php
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */

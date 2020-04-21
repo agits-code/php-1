@@ -2,10 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../public/css/style.css">
 
 
 </head>
 
 <body>
 <?php require ('nav.php');?>
+<h1>prova css</h1>
