@@ -5,7 +5,9 @@ return [
         'username' => 'root',
         'password' => 'lampolampo',
         'connection' => 'mysql:host=localhost',
-        'otion' => []
+        'options' => [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
+        ]
 
     ]
 
