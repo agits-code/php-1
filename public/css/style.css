@@ -1,0 +1,17 @@
+h1 {
+    background-color: lightgray;
+    padding: 2em;
+    text-align: center;
+}
+ul {
+    background-color: gainsboro;
+
+    font-size: large;
+
+}
+h2 {
+    background-color: aqua;
+}
+body {
+    background-color: darkgray;
+}
