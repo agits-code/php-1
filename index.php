@@ -1,18 +1,26 @@
 <?php
 
+ require 'core/bootstrap.php';
+ //die(var_dump($app));
 
-$query = require 'core/bootstrap.php';
-
-$router = Router::load('routes.php');
-
-
-$uri = trim($_SERVER['REQUEST_URI'],'/');
+//    $router = Router::load('routes.php');
+//    $uri = trim($_SERVER['REQUEST_URI'],'/');
+//    require $router->direct($uri);
+//    oppure:
 
 try {
-    require $router->direct($uri);
-    } catch (\Exception $e) {
-      echo $e->getMessage();
+
+    require Router::load('routes.php')
+        ->direct(Request::uri());
+
+    } catch (\Exception $e){
+    echo $e->getMessage();
     }
+
+
+
+
+
 
 
 
