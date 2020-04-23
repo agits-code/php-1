@@ -4,11 +4,11 @@ class Router {
         'GET' => [],
         'POST' => []
     ];
-    // passo valori chiamando  define(['a','b',...'z'])
 
-    public static function load($file) {   //dovrebbe passare $file
+
+    public static function load($file) {
         $router = new static;
-        require $file;      //dovrebbe require $file
+        require $file;
         return $router;
     }
 

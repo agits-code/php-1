@@ -1,12 +1,15 @@
 <?php
 
  require 'core/bootstrap.php';
- //die(var_dump($app));
 
-//    $router = Router::load('routes.php');
-//    $uri = trim($_SERVER['REQUEST_URI'],'/');
-//    require $router->direct($uri);
-//    oppure:
+ // visualizzo contenuto della variabile app
+ echo '<br>';
+ echo '<h4>variabile APP</h4>';
+ echo '<pre>';
+ var_dump($app);
+ echo '</pre>';
+
+
 
 try {
 
