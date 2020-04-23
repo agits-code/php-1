@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Document</title>
 
-<!--   <link rel="stylesheet" type="text/css" href="/public/css/style.css" /> -->
-    <link rel="stylesheet" type="text/css" href="/public/css/style.css.php">
+ <!--  <link rel="stylesheet" type="text/css" href="/public/css/style.css" />  -->
+ <link rel="stylesheet" type="text/css" href="/public/css/style.css.php">
 
 </head>
 
