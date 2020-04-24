@@ -1,19 +1,23 @@
 <?php
 class QueryBuilder {
     protected $pdo;
+
     public function __construct($pdo)
     {
         $this->pdo = $pdo;
     }
-    public function fetchALLTasks($table){
+
+    public function selectALL($table){
         $statement = $this->pdo->prepare("select * from {$table}");
         $statement->execute();
         return $statement->fetchALL(PDO::FETCH_CLASS);
-
     }
+
+
+
     public function insert($table,$parametrs){
-                               // insert into names (name,email) values (:name, :email)
-                               // $statement->execute(['name' => 'Agits', 'email' => 'aghybf@me.com']);
+           // insert into names (name,email) values (:name, :email)
+           // $statement->execute(['name' => 'Agits', 'email' => 'aghybf@me.com']);
                                //die(var_dump(array_keys($parametrs)));
         $sql = sprintf(
             'insert into %s (%s) values (%s)',

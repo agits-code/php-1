@@ -7,6 +7,12 @@
        <button type="submit">Submit</button>
 
    </form>
+ <h3>My Users</h3>
+ <ul>
+	 <?php foreach ($users as $user) : ?>
+	   <li><?= $user->name; ?></li>
+	 <?php endforeach;?>
+ </ul>
 
 
  <h3>My Tasks</h3>
